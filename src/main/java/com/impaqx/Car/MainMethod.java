@@ -56,21 +56,21 @@ public class MainMethod {
 			String Character = fbasecarobject.charr(whichcar);
 			String Engine = fbasecarobject.engine(whichcar);
 			String Baseverent = ((FarrariBaseCar) fbasecarobject).baseverentfetures(whichcar);
-			 jobj.put("Baseverent",Baseverent);
-            jobj.put("Charecter",Character);
-            jobj.put("Engine",Engine);
-           
-            System.out.println(jobj);
+			jobj.put("Baseverent", Baseverent);
+			jobj.put("Charecter", Character);
+			jobj.put("Engine", Engine);
+
+			System.out.println(jobj);
 			System.out.println("--------****--------");
 
 		} else if (carname.equalsIgnoreCase("Farraritopverent")) {
 			Icar ftopcarobject = fobject.object(carname);
-			String Character=ftopcarobject.charr(whichcar);
-			String Engine=ftopcarobject.engine(whichcar);
-			String Topverent=((FarrariTopVerent) ftopcarobject).topEndFetures(whichcar);
-			jobj.put("Character",Character);
-			jobj.put("Engine",Engine);
-			jobj.put("Topeverent",Topverent);
+			String Character = ftopcarobject.charr(whichcar);
+			String Engine = ftopcarobject.engine(whichcar);
+			String Topverent = ((FarrariTopVerent) ftopcarobject).topEndFetures(whichcar);
+			jobj.put("Character", Character);
+			jobj.put("Engine", Engine);
+			jobj.put("Topeverent", Topverent);
 			System.out.println(jobj);
 		} else {
 			System.out.println("plese enter the valid car name");
