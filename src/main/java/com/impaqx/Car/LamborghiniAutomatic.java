@@ -14,6 +14,7 @@ public class LamborghiniAutomatic extends LamborginiAbstractClass {
 	public String charr(String carname) {
 		try {
 			Connection con = DbConnection.getConnection();
+			
 			stmt = con.createStatement();
 			String query = Querys.getQuerry("queryla", carname);
 			ResultSet result = stmt.executeQuery(query);
